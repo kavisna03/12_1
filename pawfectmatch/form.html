@@ -1,0 +1,202 @@
+<!-- Header -->
+<header id="header">
+  <div>
+    <div>
+      <img src="images/pawfect-match-logo.png" alt="Website Logo" width="2.5%" height="2.5%">
+      <h3>Pawfect Match</h3>
+    </div>
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="pawtners.html">Pawtners</a>
+      <a href="products.html">Products</a>
+      <a href="training.html">Training</a>
+      <a href="form.html">
+        <button>Book Now</button>
+      </a>
+    </nav>
+  </div>
+
+  <div>
+    <div>
+      <h1>Share Your Home With Your Forever Friend</h1>
+      <p><em>From adoption to care, we provide everything here!</em></p>
+      <a href="pawtners.html">
+        <button>Find Your Pawtner Now</button>
+      </a>
+    </div>
+
+    <div>
+      <img src="images/animals-box.png" alt="Animals in a Box" width="40%" height="40%">
+    </div>
+  </div>
+</header>
+<p>
+  <form method = "post" action = "https://www.deitel.com">
+    <label>Your name (required)<br>
+    </label>
+    <table>
+      <tr>
+          <td> <label>First Name</label></td>
+          <td> <label>Last Name</label></td>
+        </tr>
+      <tr>
+          <td> <input type = "text" name = "firstname" size = 35 autofocus/></td> 
+          <td> <input type = "text" name = "lastname" size = 35> </td>
+      </tr>
+    </table>
+    <br>
+    <label> Email (required)</label> <br>
+    <input type = "text" size = 73.5 name = "email" placeholder="example@domain.com" required/>
+    <br><br>
+    <label> Password (required)</label> <br>
+    <input type = "password" size = 73.5 name = "email" placeholder="Password" required/>
+    <br><br>
+    <label> Phone Number (required)</label> <br>
+    <input type = "text" size = 73.5 name = "number" placeholder="+971" pattern = "+971-\d{3}-\d{7}" required/> 
+    <br><br>
+    <label> Would you like to adopt, book a playtime session or train? </label>
+    <label>Adopt
+      <input name = "bookorplay" type = "checkbox"  value = "adopt"/> 
+    </label>
+    <label>PlayTime
+      <input name = "bookorplay" type = "checkbox"  value = "play"/> 
+    </label>
+    <label>Train
+      <input name = "bookorplay" type = "checkbox"  value = "train"/> 
+    </label>
+    <br><br>
+    <label> Would you prefer as your Pawpartner? </label>
+    <label>Dog
+      <input name = "partner" type = "radio"  value = "dog"/> 
+    </label>
+    <label>Cat
+      <input name = "partner" type = "radio"  value = "cat"/> 
+    </label>
+    <br><br>
+    <label> What breed would you like to adopt? 
+      <select> <option selected> Golden Retriver</option>
+              <option> French Bulldog</option>
+              <option> Shitzu Poodle</option>
+              <option> Pembroke Welsh Corg</option>
+              <option> Yorkshire Terrier</option>
+              <option> Beagle</option>
+  </select>
+</label>
+<br><br>
+<label>Enter the date: 
+  <input type = "date"/>
+</label> 
+<br><br>
+<label>How did you hear about us?  <br>
+  <textarea name = "comments" rows = "10" cols = "80" placeholder = "Enter comments..."></textarea>
+</label> 
+<br><br>
+
+<!--training questions-->
+<label> Have you previously owned a pet? </label>
+    <label>Yes
+      <input name = "own" type = "radio"  value = "Yes"/> 
+    </label>
+    <label>No
+      <input name = "own" type = "radio"  value = "No"/> 
+    </label>
+<br><br>
+<label> Do you prefer one-on-one training, group sessions, or online courses to learn about pet care? </label>
+    <label>One-on-One 
+      <input name = "taining" type = "radio"  value = "one"/> 
+    </label>
+    <label>Group
+      <input name = "training" type = "radio"  value = "group"/> 
+    </label>
+    <label>Online
+      <input name = "training" type = "radio"  value = "online"/> 
+    </label>
+<br><br>
+<label> Which one of our trainers would you like to train with? </label>
+<input type="text" id="trainlist" placeholder="Select your trainer" list="trainers"/>
+  <datalist id="trainers">
+      <option value="Olivia Hayes"></option>
+      <option value="Samantha Rivera"></option>
+      <option value="David Thompson"></option>
+      <option value="Emily Carter"></option>
+      <option value="Michael Brooks"></option>
+      <option value="Jason Mitchell"></option>
+  </datalist>
+<br><br>
+<label>Enter the date and time for training: </label>
+<input type = "datetime-local"/>
+<br><br>
+<!--Playtime questions -->
+<label> Do you have any allergies? </label>
+    <label>Yes
+      <input name = "allergy" type = "radio"  value = "Yes"/> 
+    </label>
+    <label>No
+      <input name = "allergy" type = "radio"  value = "No"/> 
+    </label>
+<br><br>
+<label> How long would you like your play session to be? </label>
+      <input name = "playtime" type = "number"  value = "num"
+      min = "1" 
+      max = "4"
+      step = "1"/> hour(s)
+    </label>
+<br><br>
+<label>Enter the date and time for PlayTime: </label>
+<input type = "datetime-local"/>
+<br><br>
+<label>Anything else you'd like us to know?  <br>
+  <textarea name = "any" rows = "10" cols = "80" placeholder = "Enter comments..."></textarea>
+</label> 
+<br><br>
+<input type = "submit" value = "Submit"/>
+<input type = "reset" value = "Clear"/>
+</form>
+</p>
+<!-- Footer -->
+<footer>
+  <div>
+    <div>
+      <h3>Contact Us</h3>
+
+      <div>
+        <img src="icons/phone-icon.png" alt="Phone Icon" width="2%" height="2%">
+        <p>+971 50 123 4567</p>
+      </div>
+
+      <div>
+        <img src="icons/mail-icon.png" alt="Mail Icon" width="2%" height="2%">
+        <a href="mailto:pawfectmatch@gmail.com">
+          pawfectmatch@gmail.com
+        </a>
+      </div>
+
+      <div>
+        <img src="icons/location-icon.png" alt="Location Icon" width="2%" height="2%">
+        <address>
+          Shop No. 555, Street No. 19
+          Muwaileh Commercial, Sharjah
+          United Arab Emirates
+        </address>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <img src="images/pawfect-match-logo.png" alt="Website Logo" width="3%" height="3%">
+        <h3>Pawfect Match</h3>
+      </div>
+
+      <p><em>Start your animal adoption journey here!</em></p>
+
+      <a href="#header">
+        <img src="icons/arrow-icon.png" alt="Button to Top" width="3%" height="3%">
+      </a>
+    </div>
+  </div>
+
+  <div>
+    &#169; All Rights Reserved to <strong>Pawfect Match 2024</strong>
+  </div>
+</footer>
