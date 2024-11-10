@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 
- <!-- Header -->
- <header id="header">
-  <div>
-    <div>
-      <img src="images/pawfect-match-logo.png" alt="Website Logo" width="2.5%" height="2.5%">
-      <h3>Pawfect Match</h3>
-    </div>
+// HTML
+    <!-- Header -->
+    <header id="header">      
+      <div class="peach-ellipse"></div>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="pawtners.html">Pawtners</a>
-      <a href="products.html">Products</a>
-      <a href="training.html">Training</a>
-      <a href="form.html">
-        <button>Book Now</button>
-      </a>
-    </nav>
-  </div>
+      <div class="header-top">
+        <div class="logo-name">
+          <img src="images/pawfect-match-logo.png" alt="Website Logo" width="8%" height="60%">
+          <h3>Pawfect <span>Match</span></h3>
+        </div>
 
-  <div>
-    <div>
-      <h1>ANIMAL CARE PRODUCTS </h1>
-      <p><em>pamper your pets with our products ! </em></p>
-      
-    </div>
+        <nav>
+          <a class="home-link" href="index.html">Home</a>
+          <a class="pawtners-link" href="pawtners.html">Pawtners</a>
+          <a class="products-link" href="products.html">Products</a>
+          <a class="training-link" href="training.html">Training</a>
+          <a href="form.html">
+            <button class="book-now-button">Book Now</button>
+          </a>
+        </nav>
+      </div>
 
-    <div>
-      <img src="images/animals-box.png" alt="Animals in a Box" width="40%" height="40%">
-    </div>
-  </div>
-</header>
+      <div class="header-main">
+        <div>
+          <h1 class="slogan-title">Share Your Home With Your Forever Friend</h1>
+          <p class="slogan-subheading"><em>From adoption to care, we provide everything here!</em></p>
+          <a href="pawtners.html">
+            <button class="pawtners-button">Find Your Pawtner Now</button>
+          </a>
+        </div>
 
+        <div>
+          <img src="images/animals-box.png" alt="Animals in a Box">
+        </div>
+      </div>
+    </header>
+
+
+
+
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,25 +93,27 @@
         </div>
     </div>
 
+ // HTML
+    <!-- Footer -->
     <footer>
-      <div>
+      <div class="footer-main">
         <div>
-          <h3>Contact Us</h3>
+          <h3 class="contact-us-title">Contact Us</h3>
 
-          <div>
-            <img src="icons/phone-icon.png" alt="Phone Icon" width="2%" height="2%">
+          <div class="phone-number-container">
+            <img src="icons/phone-icon.png" alt="Phone Icon">
             <p>+971 50 123 4567</p>
           </div>
 
-          <div>
-            <img src="icons/mail-icon.png" alt="Mail Icon" width="2%" height="2%">
+          <div class="mail-address-container">
+            <img src="icons/mail-icon.png" alt="Mail Icon">
             <a href="mailto:pawfectmatch@gmail.com">
               pawfectmatch@gmail.com
             </a>
           </div>
 
-          <div>
-            <img src="icons/location-icon.png" alt="Location Icon" width="2%" height="2%">
+          <div class="location-address-container">
+            <img src="icons/location-icon.png" alt="Location Icon">
             <address>
               Shop No. 555, Street No. 19
               Muwaileh Commercial, Sharjah
@@ -112,22 +123,26 @@
         </div>
 
         <div>
-          <div>
-            <img src="images/pawfect-match-logo.png" alt="Website Logo" width="3%" height="3%">
-            <h3>Pawfect Match</h3>
+          <div class="logo-name">
+            <img src="images/pawfect-match-logo.png" alt="Website Logo" width="12%" height="64%">
+            <h3>Pawfect <span>Match</span></h3>
           </div>
 
-          <p><em>Start your animal adoption journey here!</em></p>
+          <p class="slogan-subheading"><em>Start your animal adoption journey here!</em></p>
 
-          <a href="#header">
-            <img src="icons/arrow-icon.png" alt="Button to Top" width="3%" height="3%">
-          </a>
+          <div class="to-top-container">
+            <a href="#header">
+              <img src="icons/arrow-icon.png" alt="Button to Top" width="16%" height="16%">
+            </a>
+            <p class="tooltip">Back To Top</p>
+          </div>
         </div>
       </div>
-
-      <div>
-        &#169; All Rights Reserved to <strong>Pawfect Match 2024</strong>
-      </div>
     </footer>
+
+    <div class="footer-bottom">
+      <p>&#169; All Rights Reserved to <strong>Pawfect Match 2024</strong></p>
+    </div>
+
 </body>
 </html>
