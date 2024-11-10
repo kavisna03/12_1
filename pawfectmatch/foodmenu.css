@@ -1,143 +1,171 @@
-
 /* General CSS code */
 body {
-  font-family: Roboto, sans-serif;
-  margin: 0;
-  overflow-x: hidden;
-}
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
 
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
+/* Header & Footer Padding */
 header,
 footer {
-  padding: 2rem 8rem;
+    padding: 2rem 8rem;
 }
 
-/* CSS code for Header */
+
+
+
+/* Header Styles */
 header {
-  background-color: #FFFAE1;
+    background-color: #FFFAE1;
+    
 }
 
 .peach-ellipse {
-  background-color: #FFE7CF;
-  height: 40rem;
-  width: 75rem;
-  border-radius: 50%;
-  position: absolute;
-  top: -44px;
-  right: -550px;
+    background-color: #FFE7CF;
+    height: 40rem;
+    width: 75rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -44px;
+    right: -550px;
 }
+
 
 nav,
 .header-main div {
   z-index: 1;
 }
 
+
 .header-top {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.15rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.15rem;
 }
 
 .logo-name {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .logo-name h3 span {
-  color: #E71A1A;
+    color: #E71A1A;
 }
 
 .header-top nav {
-  display: flex;
-  align-items: center;
-}
+    display: flex;
+    align-items: center;
+  }
+  
 
-.header-top nav a {
-  text-decoration: none;
-  margin-left: 1.5rem;
-}
+  .header-top nav a {
+    text-decoration: none;
+    margin-left: 1.5rem;
+  }
 
-.pawtners-link,
-.products-link,
-.training-link {
-  color: black;
-}
+  .pawtners-link,
+  .products-link,
+  .training-link {
+    color: black;
+  }
 
+  
 .header-top nav a:hover,
-.home-link {
+.pawtners-link {
   font-weight: bold;
   color: #9D2B2B;
 }
 
+
 .book-now-button {
-  font-size: 1rem;
-  font-family: Roboto;
-  font-weight: bold;
-  width: 120px;
-  padding: 10px 12px;
-  border: 2px solid #9D2B2B;
-  border-radius: 50px;
-  background-color: #FFE7CF;
-  cursor: pointer;
-}
+    font-size: 1rem;
+    font-family: Roboto;
+    font-weight: bold;
+    width: 120px;
+    padding: 10px 12px;
+    border: 2px solid #9D2B2B;
+    border-radius: 50px;
+    background-color: #FFE7CF;
+    cursor: pointer;
+  }
 
-.book-now-button:hover {
-  color: white;
-  background-color: #9D2B2B;
-}
+  .book-now-button {
+    font-size: 1rem;
+    font-family: Roboto;
+    font-weight: bold;
+    width: 120px;
+    padding: 10px 12px;
+    border: 2px solid #9D2B2B;
+    border-radius: 50px;
+    background-color: #FFE7CF;
+    cursor: pointer;
+  }
+  .book-now-button:hover {
+   color:white;
+    background-color: #9D2B2B;
+    
+  }
 
-.header-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: -1.25rem;
-}
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1.25rem;
+  }
+  
+  .header-main img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+  }
+  
+  .slogan-title {
+    font-size: 3rem;
+    width: 23.5rem;
+    line-height: 4rem;
+  }
+  
+  header .slogan-subheading {
+    font-size: 1.4rem;
+    width: 24rem;
+    line-height: 1.9rem;
+    margin-top: -1.9rem;
+    margin-bottom: 1.9rem;
+  }
+  
 
-.header-main img {
-  width: 30rem;
-  height: 30rem;
-  object-fit: cover;
-}
+  .pawtners-button {
+    font-size: 1.2rem;
+    font-family: Roboto;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: white;
+    background-color: #9D2B2B;
+    padding: 15px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .pawtners-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pawtners-button:active {
+    box-shadow: none;
+  }
 
-.slogan-title {
-  font-size: 3rem;
-  width: 23.5rem;
-  line-height: 4rem;
-}
 
-header .slogan-subheading {
-  font-size: 1.4rem;
-  width: 24rem;
-  line-height: 1.9rem;
-  margin-top: -1.9rem;
-  margin-bottom: 1.9rem;
-}
 
-.pawtners-button {
-  font-size: 1.2rem;
-  font-family: Roboto;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  color: white;
-  background-color: #9D2B2B;
-  padding: 15px 24px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-}
 
-.pawtners-button:hover {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.pawtners-button:active {
-  box-shadow: none;
-}
 
 
 
@@ -205,81 +233,81 @@ body {
 
 
 
+/* Footer Styles */
 
-/* CSS code for Footer */
 footer {
-  background-color: #FFE7CF;
-}
-
-.footer-main {
-  display: flex;
-  justify-content: space-between;
-  gap: 25rem;
-}
-
-.contact-us-title {
-  font-size: 1.75rem;
-}
-
-.phone-number-container,
-.mail-address-container,
-.location-address-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-  font-size: 1.15rem;
-}
-
-.phone-number-container img,
-.mail-address-container img,
-.location-address-container img {
-  width: 1.75rem;
-  height: 1.75rem;
-  object-fit: cover;
-  margin-right: 1.5rem;
-}
-
-.location-address-container address {
-  width: 15rem;
-  line-height: 1.5rem;
-}
-
-footer .logo-name h3 {
-  font-size: 1.75rem;
-}
-
-footer .slogan-subheading {
-  font-size: 1.15rem;
-  margin-top: 0.05rem;
-  margin-bottom: 1.5rem;
-}
-
-.to-top-container {
-  position: relative;
-}
-
-.to-top-container .tooltip {
-  display: none;
-  font-size: 0.75rem;
-  color: white;
-  background-color: rgb(87, 87, 87);
-  padding: 0.25rem 0.6rem;
-  border-radius: 6px;
-  position: absolute;
-  bottom: -1.5rem;
-  left: -0.7rem;
-}
-
-.to-top-container:hover .tooltip {
-  display: inline-block;
-}
-
-.footer-bottom {
-  font-size: 0.8rem;
-  color: white;
-  background-color: #9D2B2B;
-  height: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    background-color: #FFE7CF;
+  }
+  
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 25rem;
+  }
+  
+  .contact-us-title {
+    font-size: 1.75rem;
+  }
+  
+  .phone-number-container,
+  .mail-address-container,
+  .location-address-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+  }
+  
+  .phone-number-container img,
+  .mail-address-container img,
+  .location-address-container img {
+    width: 1.75rem;
+    height: 1.75rem;
+    object-fit: cover;
+    margin-right: 1.5rem;
+  }
+  
+  .location-address-container address {
+    width: 15rem;
+    line-height: 1.5rem;
+  }
+  
+  footer .logo-name h3 {
+    font-size: 1.75rem;
+  }
+  
+  footer .slogan-subheading {
+    font-size: 1.15rem;
+    margin-top: 0.05rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .to-top-container {
+    position: relative;
+  }
+  
+  .to-top-container .tooltip {
+    display: none;
+    font-size: 0.75rem;
+    color: white;
+    background-color: rgb(87, 87, 87);
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    position: absolute;
+    bottom: -1.5rem;
+    left: -0.7rem;
+  }
+  
+  .to-top-container:hover .tooltip {
+    display: inline-block;
+  }
+  
+  .footer-bottom {
+    font-size: 0.8rem;
+    color: white;
+    background-color: #9D2B2B;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
