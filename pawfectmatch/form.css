@@ -205,19 +205,3 @@ footer {
     color: white;
     padding: 50px 50px 50px 50px;
 }
-
-.hidden {
-    display: none;
-  }
-  
-  #adoptCheckbox:checked + .adopt-section {
-    display: block;
-  }
-  
-  #trainingCheckbox:checked + .training-section {
-    display: block;
-  }
-  
-  #playtimeCheckbox:checked + .playtime-section {
-    display: block;
-  }
