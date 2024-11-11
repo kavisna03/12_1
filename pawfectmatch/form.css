@@ -195,39 +195,11 @@ footer {
   
   .slogan-title {
     font-size: 3rem;
-    width: 23.5rem;
+    width: 50rem;
     line-height: 4rem;
+    color:#9D2B2B;
   }
   
-  header .slogan-subheading {
-    font-size: 1.4rem;
-    width: 24rem;
-    line-height: 1.9rem;
-    margin-top: -1.9rem;
-    margin-bottom: 1.9rem;
-  }
-  
-  .pawtners-button {
-    font-size: 1.2rem;
-    font-family: Roboto;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    color: white;
-    background-color: #9D2B2B;
-    padding: 15px 24px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-  }
-  
-  .pawtners-button:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .pawtners-button:active {
-    box-shadow: none;
-  }
-
 .middlepart{
     background-color: #9D2B2B;
     color: white;
