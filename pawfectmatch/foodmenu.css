@@ -142,7 +142,7 @@ nav,
   }
   
 
-  .pawtners-button {
+  .products-button {
     font-size: 1.2rem;
     font-family: Roboto;
     font-weight: bold;
@@ -155,11 +155,11 @@ nav,
     cursor: pointer;
   }
   
-  .pawtners-button:hover {
+  .products-button:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   }
   
-  .pawtners-button:active {
+  .products-button:active {
     box-shadow: none;
   }
 
