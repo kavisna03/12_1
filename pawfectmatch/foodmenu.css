@@ -185,6 +185,14 @@ body {
   padding: 40px 20px;
 }
 
+h1 {
+  text-align: center;
+  color: #9D2B2B;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  
+}
+
 .section {
   display: flex;
   flex-wrap: wrap;
