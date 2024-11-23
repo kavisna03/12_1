@@ -72,14 +72,14 @@ nav,
   }
 
   .pawtners-link,
-  .products-link,
+  .home-link,
   .training-link {
     color: black;
   }
 
   
 .header-top nav a:hover,
-.pawtners-link {
+.products-link {
   font-weight: bold;
   color: #9D2B2B;
 }
