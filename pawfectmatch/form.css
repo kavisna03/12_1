@@ -21,9 +21,9 @@
 .buttons{
     background-color: #9D2B2B;
     color:#FFE7CF;
-    padding: 10px;
+    padding: 15px;
     border-radius: 25px;
-    border: 2px solid beige;
+    border: 3px solid beige;
     text-align: center;
 }
 
@@ -193,15 +193,34 @@ footer {
     object-fit: cover;
   }
   
-  .slogan-title {
+@keyframes colorChange {
+  0%{color: #9D2B2B;}
+  25%{color: #D9534F;}
+  50%{color: #d57368;}
+  75%{color: #86311b;}
+  100%{color: #4d0707;}
+}
+
+.slogan-title {
     font-size: 3rem;
     width: 50rem;
     line-height: 4rem;
-    color:#9D2B2B;
-  }
+    color: #9D2B2B;
+    animation: colorChange 4s infinite;
+}
   
 .middlepart{
     background-color: #9D2B2B;
     color: white;
     padding: 50px 50px 50px 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
 }
