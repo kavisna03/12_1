@@ -197,13 +197,13 @@ h2 {
 }
 /* Table Styles */
 table {
+    width: 100%;
     margin: 2rem 0;
     border-collapse: collapse;
 }
 
 /* Pet Card Styling */
 .pet-card {
-    width: 300px; /* increased width */
     padding: 1rem;
     background-color: #FFA07A; /* Light orange blush */
     border: 2px solid #FFE7CF; /* Light yellow border */
