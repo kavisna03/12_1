@@ -11,14 +11,17 @@
     <meta charset="utf-8">
     <title>Home</title>
 
-    <!-- Link CSS files to this HTML file -->
-    <link href="general.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-
     <!-- Import Roboto font-family from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Link CSS files to this HTML file -->
+    <link href="general.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+
+    <!-- Link JavaScript file to this HTML file -->
+    <script src="index.js"></script>
   </head>
 
   <body>
@@ -84,63 +87,66 @@
     <section id="adoption-stories">
       <h2 class="section-title">Adoption Stories</h2>
 
-      <div class="stories-grid">
-        <div class="left-column">
-          <div>
-            <div class="story-1">
-              <article>
-              <em>“Leo, my playful kitty, I laugh so much at the troubles you 
-                make. My home has become even livelier with you in it. 
-                Thank you Pawfect Match. You are doing a good deed by 
-                taking care of so many animals until they find a home.”</em>
-                <br>
-                <strong>~ Theresa ~</strong>
-              </article>
-      
-              <img src="images/paw-print.png" alt="Paw Print">
-            </div>
-          </div>
-
-          <div class="bottom-row">
-            <div class="story-2">
-              <article>
-                <em>“I love you so much Chubby. Chubby is a 
-                one- of-a-kind cat. She was very introverted 
-                at first. But with time, she opened up and 
-                has never left my side ever since then. 
-                Keep up the great work Pawfect Match. 
-                Your animal care products and training 
-                give me the confidence that I'm taking good care
-                of my Chubby.”</em>
-                <br>
-                <strong>~ Newt ~</strong>
-              </article>
-
-              <img src="images/paw-print.png" alt="Paw Print">
-            </div>
-          </div>
+      <div class="story-grid">
+        <div class="story-1">
+          <article>
+            <em>“Leo, my playful kitty, I laugh so much at the troubles you 
+            make. My home has become even livelier with you in it. 
+            Thank you Pawfect Match. You are doing a good deed by 
+            taking care of so many animals until they find a home.”</em>
+            <br>
+            <strong>~ Theresa ~</strong>
+          </article>
+  
+          <img src="images/paw-print.png" alt="Paw Print">
         </div>
-
         <div>
-          <div class="story-3">
-            <img class="paw-print-1" src="images/paw-print.png" alt="Paw Print">
-    
+          <img id="story-1-pic" src="images/leo-1.jpeg" alt="Leo's Picture">
+        </div>
+      </div>
+
+      <div class="story-grid">
+        <div>
+          <img id="story-2-pic" src="images/chubby.jpeg" alt="Leo's Picture">
+        </div>
+        <div class="story-2">
+          <img src="images/paw-print.png" alt="Paw Print">
+
             <article>
-              <em>“I found my best friend Rollexy here. We 
-              instantly connected during the playtime I 
-              had with her at the center and I knew 
-              that she was the one. So grateful to 
-              Pawfect Match for their all in one service 
-              of providing animal care products and 
-              training on proper care and management 
-              on top of adoption, that are immensely 
-              helpful for first-time adopters like me.”</em>
+              <em>“I love you so much Chubby. Chubby is a 
+              one- of-a-kind cat. She was very introverted 
+              at first. But with time, she opened up and 
+              has never left my side ever since then. 
+              Keep up the great work Pawfect Match. 
+              Your animal care products and training 
+              give me the confidence that I'm taking good care
+              of my Chubby.”</em>
               <br>
-              <strong>~ Thomas ~</strong>
+              <strong>~ Newt ~</strong>
             </article>
-    
-            <img class="paw-print-2" src="images/paw-print.png" alt="Paw Print">
-          </div>
+        </div>
+      </div>
+
+      <div class="story-grid">
+        <div class="story-3">
+          <article>
+            <em>“I found my best friend Rollexy here. We 
+            instantly connected during the playtime I 
+            had with her at the center and I knew 
+            that she was the one. So grateful to 
+            Pawfect Match for their all in one service 
+            of providing animal care products and 
+            training on proper care and management 
+            on top of adoption, that are immensely 
+            helpful for first-time adopters like me.”</em>
+            <br>
+            <strong>~ Thomas ~</strong>
+          </article>
+  
+          <img src="images/paw-print.png" alt="Paw Print">
+        </div>
+        <div>
+          <img id="story-3-pic" src="images/rollexy-1.jpeg" alt="Leo's Picture">
         </div>
       </div>
     </section>

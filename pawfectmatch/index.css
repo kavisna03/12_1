@@ -154,6 +154,7 @@ header .slogan-subheading {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  margin-top: -1rem;
 }
 
 .about-us-main p {
@@ -173,14 +174,13 @@ header .slogan-subheading {
 
 /* CSS code for Adoption Stories section */
 #adoption-stories {
-  padding-bottom: 4.5rem;
+  padding-bottom: 2.5rem;
 }
 
-.stories-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 1rem;
-  align-items: center;
+.story-grid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .story-1 article,
@@ -190,70 +190,69 @@ header .slogan-subheading {
   text-align: center;
   line-height: 1.5rem;
   background-color: #F8E7E7;
-  padding: 1rem 1rem;
+  padding: 1.5rem 1rem;
   border-radius: 1rem;
-}
-
-.story-2 article, 
-.story-3 article {
-  width: 23rem;
-}
-
-.left-column .bottom-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: ". story-2";
-}
-
-.story-2 {
-  grid-area: story-2;
-  margin-top: 1rem;
 }
 
 .story-1,
 .story-2,
 .story-3 {
   position: relative;
+  width: 40rem;
 }
 
 .story-1 img {
   width: 3rem;
   height: 3rem;
   object-fit: cover;
-  transform: rotate(26deg);
+  transform: rotate(-26deg);
   position: absolute;
   bottom: -0.8rem;
   left: -0.7rem;
 }
 
 .story-2 img {
-  width: 4.5rem;
-  height: 4.5rem;
-  object-fit: cover;
-  transform: rotate(-30deg);
-  position: absolute;
-  bottom: -1.5rem;
-  left: -1.5rem;
-}
-
-.story-3 .paw-print-1 {
   width: 4rem;
   height: 4rem;
   object-fit: cover;
   transform: rotate(30deg);
   position: absolute;
-  top: -2.6rem;
+  bottom: -1rem;
   right: -0.7rem;
 }
 
-.story-3 .paw-print-2 {
+.story-3 img {
   width: 2.5rem;
   height: 2.5rem;
   object-fit: cover;
   transform: rotate(-30deg);
   position: absolute;
-  bottom: -1.5rem;
+  bottom: -1rem;
   left: 0.9rem;
+}
+
+#story-1-pic {
+  width: 20rem;
+  height: 10.5rem;
+  object-fit: cover;
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+
+#story-2-pic {
+  width: 20rem;
+  height: 12rem;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+
+#story-3-pic {
+  width: 20rem;
+  height: 13.5rem;
+  object-fit: cover;
+  margin-left: 1rem;
+  border-radius: 1rem;
 }
 
 /* CSS code for Footer */
