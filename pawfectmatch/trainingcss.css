@@ -67,7 +67,7 @@ nav,
 }
 
 .header-top nav a:hover,
-.training-link {
+.home-link {
   font-weight: bold;
   color: #9D2B2B;
 }
@@ -152,7 +152,7 @@ body {
 
 .card {
     display: flex;
-    max-width: 600px;
+    align-items: center;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -226,8 +226,6 @@ body {
     font-weight: bold;
     padding: 10px;
 }
-
-
 
 
 
@@ -306,5 +304,5 @@ footer .slogan-subheading {
   height: 2.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;
 }
