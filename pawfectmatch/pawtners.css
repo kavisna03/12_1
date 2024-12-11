@@ -204,6 +204,7 @@ table {
 
 /* Pet Card Styling */
 .pet-card {
+    width: 300px;
     padding: 1rem;
     background-color: #FFA07A; /* Light orange blush */
     border: 2px solid #FFE7CF; /* Light yellow border */
