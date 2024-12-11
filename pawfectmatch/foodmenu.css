@@ -230,6 +230,7 @@ h1 {
 
 
 
+
 /* Footer Styles */
 
 footer {
@@ -306,5 +307,5 @@ footer {
     height: 2.5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;
+  }
