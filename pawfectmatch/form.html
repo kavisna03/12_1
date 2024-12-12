@@ -1,286 +1,286 @@
- <!-- Header -->
- <html>
-  <head>
-    <meta charset = "utf-8"/>
-    <title>form</title>
-    <link rel = "stylesheet" href = "form.css">
-    <script src="form.js"></script> 
-  </head>
-    <body>
-      <div class = "container">
-        <header id="header">      
-          <div class="peach-ellipse"></div>
-        
-          <div class="header-top">
-            <div class="logo-name">
-              <img src="images/pawfect-match-logo.png" alt="Website Logo" width="8%" height="60%">
-              <h3>Pawfect <span>Match</span></h3>
+<!-- Header -->
+<html>
+<head>
+<meta charset = "utf-8"/>
+<title>form</title>
+<link rel = "stylesheet" href = "form.css">
+<script src="form.js"></script> 
+</head>
+<body>
+  <div class = "container">
+    <header id="header">      
+      <div class="peach-ellipse"></div>
+    
+      <div class="header-top">
+        <div class="logo-name">
+          <img src="images/pawfect-match-logo.png" alt="Website Logo" width="8%" height="60%">
+          <h3>Pawfect <span>Match</span></h3>
+        </div>
+    
+        <nav>
+          <a class="home-link" href="index.html">Home</a>
+          <a class="pawtners-link" href="pawtners.html">Pawtners</a>
+          <a class="products-link" href="products.html">Products</a>
+          <a class="training-link" href="training.html">Training</a>
+          <a href="form.html">
+            <button class="book-now-button">Book Now</button>
+          </a>
+        </nav>
+      </div>
+    
+      <div class="header-main">
+          <div>
+              <h1 class="slogan-title">Here to support you and your new best friend, every step of the way!</h1>
             </div>
-        
-            <nav>
-              <a class="home-link" href="index.html">Home</a>
-              <a class="pawtners-link" href="pawtners.html">Pawtners</a>
-              <a class="products-link" href="products.html">Products</a>
-              <a class="training-link" href="training.html">Training</a>
-              <a href="form.html">
-                <button class="book-now-button">Book Now</button>
-              </a>
-            </nav>
-          </div>
-        
-          <div class="header-main">
-              <div>
-                  <h1 class="slogan-title">Here to support you and your new best friend, every step of the way!</h1>
-                </div>
-            <div>
-              <img src="images/animals-box.png" alt="Animals in a Box">
-            </div>
-          </div>
-        </header>
-        <div class = "middlepart">
-            <p>
-              <form id = "booking-form" method = "post" action = "index.html">
-                <label>Your name (required)<br>
-                </label>
-                <table>
-                  <tr>
-                      <td> <label style = "color:white;">First Name</label></td>
-                      <td> <label style = "color:white;">Last Name</label></td>
-                    </tr>
-                  <tr>
-                      <td> <input class = "firstlastname" type = "text" name = "firstname" size = 35 autofocus/></td> 
-                      <td> <input class = "firstlastname" type = "text" name = "lastname" size = 35> </td>
-                  </tr>
-                </table>
-                <br>
-                <label> Email (required)</label> <br>
-                <input class = "essentials" type = "text" size = 73.5 name = "email" placeholder="example@domain.com" required/>
-                <br><br>
-                <label> Password (required)</label> <br>
-                <input class = "essentials" type = "password" size = 73.5 name = "email" placeholder="Password" required/>
-                <br><br>
-                <label> Phone Number (required)</label> <br>
-                <input class = "essentials" type = "text" size = 73.5 name = "number" placeholder="+971" pattern = "+971-\d{3}-\d{7}" required/> 
-                <br><br>
-                <label> Would you like to adopt, book a playtime session or train? </label>
-                <label>Adopt
-                  <input onclick="hiddenFunctionAdoption()" class = "checkboxesandradio" name = "bookorplay" type = "radio"  value = "adopt" id = "forAdoption" /> 
-                </label>
-                <label>PlayTime
-                  <input onclick="hiddenFunctionPlaytime()" class = "checkboxesandradio" name = "bookorplay" type = "radio"  value = "play" id = "forPlaytime"/> 
-                </label>
-                <label>Train
-                  <input onclick="hiddenFunctionTraining()" class = "checkboxesandradio" name = "bookorplay" type = "radio"  value = "train" id = "forTraining"/> 
-                </label>
-                <br><br>
-                <!--Adopting questions-->
-                <div id="adoptQuestions" class="hidden">
-                  <label id = "dogOrCat"> Would you prefer as your Pawpartner? </label>
-                  <label>Dog
-                    <input onclick="dogBreeds()" class = "checkboxesandradio" name = "partner" type = "radio"  value = "dog"/> 
-                  </label>
-                  <label>Cat
-                    <input onclick="catBreeds()"class = "checkboxesandradio" name = "partner" type = "radio"  value = "cat"/> 
-                  </label>
-                  <br><br>
-                  <div id = "breedDogs" class="hidden">
-                    <label> What breed of dogs would you like to adopt? 
-                        <select class = "checkboxesandradio" > <option selected> Golden Retriver</option>
-                                <option> French Bulldog</option>
-                                <option> Shitzu Poodle</option>
-                                <option> Pembroke Welsh Corg</option>
-                                <option> Yorkshire Terrier</option>
-                                <option> Beagle</option>
-                        </select>
-                    </label>  
-                    <br><br>
-                  </div>
-                  <div id = "breedCats" class="hidden">
-                    <label> What breed of cats would you like to adopt? 
-                        <select class = "checkboxesandradio" > <option selected> Burmese</option>
-                                <option> Burmese</option>
-                                <option> Birman</option>
-                                <option> Ragdoll</option>
-                                <option> British Shorthair</option>
-                                <option> Domestic Shorthair</option>
-                                <option> Persian</option>
-                        </select>
-                    </label>  
-                    <br><br>
-                  </div>
-            
-  
-            <label> Do you have any allergies? </label>
-                <label>Yes
-                  <input class = "checkboxesandradio" name = "allergy" type = "radio"  value = "Yes"/> 
-                </label>
-                <label>No
-                  <input class = "checkboxesandradio" name = "allergy" type = "radio"  value = "No"/> 
-                </label>
+        <div>
+          <img src="images/animals-box.png" alt="Animals in a Box">
+        </div>
+      </div>
+    </header>
+    <div class = "middlepart">
+        <p>
+          <form id = "booking-form" method = "post" action = "index.html">
+            <label>Your name (required)<br>
+            </label>
+            <table>
+              <tr>
+                  <td> <label style = "color:white;">First Name</label></td>
+                  <td> <label style = "color:white;">Last Name</label></td>
+                </tr>
+              <tr>
+                  <td> <input class = "firstlastname" type = "text" name = "firstname" size = 35 autofocus/></td> 
+                  <td> <input class = "firstlastname" type = "text" name = "lastname" size = 35> </td>
+              </tr>
+            </table>
+            <br>
+            <label> Email (required)</label> <br>
+            <input class = "essentials" type = "text" size = 73.5 name = "email" placeholder="example@domain.com" required/>
             <br><br>
-            <label> Have you previously owned a pet? </label>
-                <label>Yes
-                  <input class = "checkboxesandradio" name = "own" type = "radio"  value = "Yes"/> 
-                </label>
-                <label>No
-                  <input class = "checkboxesandradio" name = "own" type = "radio"  value = "No"/> 
-                </label>
+            <label> Password (required)</label> <br>
+            <input class = "essentials" type = "password" size = 73.5 name = "email" placeholder="Password" required/>
             <br><br>
-            <label>Enter the date: 
-              <input class = "checkboxesandradio" type = "date"/>
-            </label> 
+            <label> Phone Number (required)</label> <br>
+            <input class = "essentials" type = "text" size = 73.5 name = "number" placeholder="+971" pattern = "+971-\d{3}-\d{7}" required/> 
             <br><br>
-              <label>How did you hear about us?  <br>
-                <textarea class = "checkboxesandradio" name = "comments" rows = "10" cols = "80" placeholder = "Enter comments..."></textarea>
-              </label> 
+            <label> Would you like to adopt, book a playtime session or train? </label>
+            <label>Adopt
+              <input onclick="hiddenFunctionAdoption()" class = "checkboxesandradio" name = "bookorplay" type = "radio"  value = "adopt" id = "forAdoption" /> 
+            </label>
+            <label>PlayTime
+              <input onclick="hiddenFunctionPlaytime()" class = "checkboxesandradio" name = "bookorplay" type = "radio"  value = "play" id = "forPlaytime"/> 
+            </label>
+            <label>Train
+              <input onclick="hiddenFunctionTraining()" class = "checkboxesandradio" name = "bookorplay" type = "radio"  value = "train" id = "forTraining"/> 
+            </label>
+            <br><br>
+            <!--Adopting questions-->
+            <div id="adoptQuestions" class="hidden">
+              <label id = "dogOrCat"> Would you prefer as your Pawpartner? </label>
+              <label>Dog
+                <input onclick="dogBreeds()" class = "checkboxesandradio" name = "partner" type = "radio"  value = "dog"/> 
+              </label>
+              <label>Cat
+                <input onclick="catBreeds()"class = "checkboxesandradio" name = "partner" type = "radio"  value = "cat"/> 
+              </label>
               <br><br>
-            </div>
-            
-            <!--training questions-->
-            <div id = "trainingQuestions" class="hidden">
-                  <label> Have you previously owned a pet? </label>
-                  <label>Yes
-                    <input class = "checkboxesandradio" name = "own" type = "radio"  value = "Yes"/> 
-                  </label>
-                  <label>No
-                    <input class = "checkboxesandradio" name = "own" type = "radio"  value = "No"/> 
-                  </label>
-              <br><br>
-              <label> Do you prefer one-on-one training, group sessions, or online courses to learn about pet care? </label>
-                  <label>One-on-One 
-                    <input class = "checkboxesandradio" name = "taining" type = "radio"  value = "one"/> 
-                  </label>
-                  <label>Group
-                    <input class = "checkboxesandradio" name = "training" type = "radio"  value = "group"/> 
-                  </label>
-                  <label>Online
-                    <input class = "checkboxesandradio" name = "training" type = "radio"  value = "online"/> 
-                  </label>
-              <br><br>
-              <label> Which session would you like to attend? </label>
-                <select class = "checkboxesandradio" id="training">
-                    <option>Advanced Tricks and Commands</option>
-                    <option>Proper Meal Planning For Your Pet</option>
-                    <option>Obedience Training for Basic Commands</option>
-                    <option>Training on Walking Etiquette</option>
-                    <option>Crate Training for Comfort and Security</option>
-                    <option>Socialization with Other Pets and People</option>
-                    <option>Addressing Behavioral Issues</option>
-                </select>
+              <div id = "breedDogs" class="hidden">
+                <label> What breed of dogs would you like to adopt? 
+                    <select class = "checkboxesandradio" > <option selected> Golden Retriver</option>
+                            <option> French Bulldog</option>
+                            <option> Shitzu Poodle</option>
+                            <option> Pembroke Welsh Corg</option>
+                            <option> Yorkshire Terrier</option>
+                            <option> Beagle</option>
+                    </select>
+                </label>  
                 <br><br>
-              <label> Which one of our trainers would you like to train with? </label>
-              <input id = "trainer" class = "checkboxesandradio" type="text" id="trainlist" placeholder="Select your trainer" list="trainers"/>
-                <datalist id="trainers">
-                    <option class = "checkboxesandradio" value="Olivia Hayes"></option>
-                    <option value="Samantha Rivera"></option>
-                    <option value="David Thompson"></option>
-                    <option value="Emily Carter"></option>
-                    <option value="Michael Brooks"></option>
-                    <option value="Jason Mitchell"></option>
-                </datalist>
-              <br><br>
-              <label>Enter the date and time for training: </label>
-              <input class = "checkboxesandradio" type = "datetime-local"/>
-              <br><br>
-  
-            </div>
-  
-            <!--Playtime questions -->
-            <div id="playtimeQuestions" class="hidden">
-              <label> Do you have any allergies? </label>
+              </div>
+              <div id = "breedCats" class="hidden">
+                <label> What breed of cats would you like to adopt? 
+                    <select class = "checkboxesandradio" > <option selected> Burmese</option>
+                            <option> Burmese</option>
+                            <option> Birman</option>
+                            <option> Ragdoll</option>
+                            <option> British Shorthair</option>
+                            <option> Domestic Shorthair</option>
+                            <option> Persian</option>
+                    </select>
+                </label>  
+                <br><br>
+              </div>
+        
+
+        <label> Do you have any allergies? </label>
+            <label>Yes
+              <input class = "checkboxesandradio" name = "allergy" type = "radio"  value = "Yes"/> 
+            </label>
+            <label>No
+              <input class = "checkboxesandradio" name = "allergy" type = "radio"  value = "No"/> 
+            </label>
+        <br><br>
+        <label> Have you previously owned a pet? </label>
+            <label>Yes
+              <input class = "checkboxesandradio" name = "own" type = "radio"  value = "Yes"/> 
+            </label>
+            <label>No
+              <input class = "checkboxesandradio" name = "own" type = "radio"  value = "No"/> 
+            </label>
+        <br><br>
+        <label>Enter the date: 
+          <input class = "checkboxesandradio" type = "date"/>
+        </label> 
+        <br><br>
+          <label>How did you hear about us?  <br>
+            <textarea class = "checkboxesandradio" name = "comments" rows = "10" cols = "80" placeholder = "Enter comments..."></textarea>
+          </label> 
+          <br><br>
+        </div>
+        
+        <!--training questions-->
+        <div id = "trainingQuestions" class="hidden">
+              <label> Have you previously owned a pet? </label>
               <label>Yes
-                <input class = "checkboxesandradio" name = "allergy" type = "radio"  value = "Yes"/> 
+                <input class = "checkboxesandradio" name = "own" type = "radio"  value = "Yes"/> 
               </label>
               <label>No
-                <input class = "checkboxesandradio" name = "allergy" type = "radio"  value = "No"/> 
+                <input class = "checkboxesandradio" name = "own" type = "radio"  value = "No"/> 
               </label>
-              <br><br>
-              <label> How long would you like your play session to be? </label>
-                    <input  id = "playsession" class = "checkboxesandradio" name = "playtime" type = "number"  value = "num"
-                    min = "1" 
-                    max = "4"
-                    step = "1"/> hour(s)
-                  </label>
-              <br><br>
-              <label> What breed would you like to play with? 
-                <select class = "checkboxesandradio" > <option selected> Golden Retriver</option>
-                        <option> French Bulldog</option>
-                        <option> Shitzu Poodle</option>
-                        <option> Pembroke Welsh Corg</option>
-                        <option> Yorkshire Terrier</option>
-                        <option> Beagle</option>
-                        <option> Burmese</option>
-                        <option> Birman</option>
-                        <option> Ragdoll</option>
-                        <option> British Shorthair</option>
-                        <option> Domestic Shorthair</option>
-                        <option> Persian</option>
-                </select>
-            </label>  
-        <br><br>
-              <label>Enter the date and time for PlayTime: </label>
-              <input class = "checkboxesandradio" type = "datetime-local"/>
-              <br><br>
-              <label>Anything else you'd like us to know?  <br>
-                <textarea class = "checkboxesandradio" name = "any" rows = "10" cols = "80" placeholder = "Enter comments..."></textarea>
-              </label> 
-              <br><br>
+          <br><br>
+          <label> Do you prefer one-on-one training, group sessions, or online courses to learn about pet care? </label>
+              <label>One-on-One 
+                <input class = "checkboxesandradio" name = "taining" type = "radio"  value = "one"/> 
+              </label>
+              <label>Group
+                <input class = "checkboxesandradio" name = "training" type = "radio"  value = "group"/> 
+              </label>
+              <label>Online
+                <input class = "checkboxesandradio" name = "training" type = "radio"  value = "online"/> 
+              </label>
+          <br><br>
+          <label> Which session would you like to attend? </label>
+            <select class = "checkboxesandradio" id="training">
+                <option>Advanced Tricks and Commands</option>
+                <option>Proper Meal Planning For Your Pet</option>
+                <option>Obedience Training for Basic Commands</option>
+                <option>Training on Walking Etiquette</option>
+                <option>Crate Training for Comfort and Security</option>
+                <option>Socialization with Other Pets and People</option>
+                <option>Addressing Behavioral Issues</option>
+            </select>
+            <br><br>
+          <label> Which one of our trainers would you like to train with? </label>
+          <input id = "trainer" class = "checkboxesandradio" type="text" id="trainlist" placeholder="Select your trainer" list="trainers"/>
+            <datalist id="trainers">
+                <option class = "checkboxesandradio" value="Olivia Hayes"></option>
+                <option value="Samantha Rivera"></option>
+                <option value="David Thompson"></option>
+                <option value="Emily Carter"></option>
+                <option value="Michael Brooks"></option>
+                <option value="Jason Mitchell"></option>
+            </datalist>
+          <br><br>
+          <label>Enter the date and time for training: </label>
+          <input class = "checkboxesandradio" type = "datetime-local"/>
+          <br><br>
+
+        </div>
+
+        <!--Playtime questions -->
+        <div id="playtimeQuestions" class="hidden">
+          <label> Do you have any allergies? </label>
+          <label>Yes
+            <input class = "checkboxesandradio" name = "allergy" type = "radio"  value = "Yes"/> 
+          </label>
+          <label>No
+            <input class = "checkboxesandradio" name = "allergy" type = "radio"  value = "No"/> 
+          </label>
+          <br><br>
+          <label> How long would you like your play session to be? </label>
+                <input  id = "playsession" class = "checkboxesandradio" name = "playtime" type = "number"  value = "num"
+                min = "1" 
+                max = "4"
+                step = "1"/> hour(s)
+              </label>
+          <br><br>
+          <label> What breed would you like to play with? 
+            <select class = "checkboxesandradio" > <option selected> Golden Retriver</option>
+                    <option> French Bulldog</option>
+                    <option> Shitzu Poodle</option>
+                    <option> Pembroke Welsh Corg</option>
+                    <option> Yorkshire Terrier</option>
+                    <option> Beagle</option>
+                    <option> Burmese</option>
+                    <option> Birman</option>
+                    <option> Ragdoll</option>
+                    <option> British Shorthair</option>
+                    <option> Domestic Shorthair</option>
+                    <option> Persian</option>
+            </select>
+        </label>  
+    <br><br>
+          <label>Enter the date and time for PlayTime: </label>
+          <input class = "checkboxesandradio" type = "datetime-local"/>
+          <br><br>
+          <label>Anything else you'd like us to know?  <br>
+            <textarea class = "checkboxesandradio" name = "any" rows = "10" cols = "80" placeholder = "Enter comments..."></textarea>
+          </label> 
+          <br><br>
+        </div>
+        
+        <input id = "submitButton" class = "buttons" type = "submit" value = "    Submit    "/>
+        <input id = "clearButton"class = "buttons" type = "reset" value = "   Reset   "/>
+        </form>
+        </p>
+        <p id = "text"></p>
+  </div>
+      <!-- Footer -->
+      <footer>
+        <div class="footer-main">
+          <div>
+            <h3 class="contact-us-title">Contact Us</h3>
+  
+            <div class="phone-number-container">
+              <img src="icons/phone-icon.png" alt="Phone Icon">
+              <p>+971 50 123 4567</p>
             </div>
-            
-            <input id = "submitButton" class = "buttons" type = "submit" value = "    Submit    "/>
-            <input id = "clearButton"class = "buttons" type = "reset" value = "   Reset   "/>
-            </form>
-            </p>
-            <p id = "text"></p>
-      </div>
-          <!-- Footer -->
-          <footer>
-            <div class="footer-main">
-              <div>
-                <h3 class="contact-us-title">Contact Us</h3>
-      
-                <div class="phone-number-container">
-                  <img src="icons/phone-icon.png" alt="Phone Icon">
-                  <p>+971 50 123 4567</p>
-                </div>
-      
-                <div class="mail-address-container">
-                  <img src="icons/mail-icon.png" alt="Mail Icon">
-                  <a href="mailto:pawfectmatch@gmail.com">
-                    pawfectmatch@gmail.com
-                  </a>
-                </div>
-      
-                <div class="location-address-container">
-                  <img src="icons/location-icon.png" alt="Location Icon">
-                  <address>
-                    Shop No. 555, Street No. 19
-                    Muwaileh Commercial, Sharjah
-                    United Arab Emirates
-                  </address>
-                </div>
-              </div>
-      
-              <div>
-                <div class="logo-name">
-                  <img src="images/pawfect-match-logo.png" alt="Website Logo" width="12%" height="64%">
-                  <h3>Pawfect <span>Match</span></h3>
-                </div>
-      
-                <p class="slogan-subheading"><em>Start your animal adoption journey here!</em></p>
-      
-                <div class="to-top-container">
-                  <a href="#header">
-                    <img src="icons/arrow-icon.png" alt="Button to Top" width="12%" height="14%">
-                  </a>
-                  <p class="tooltip">Back To Top</p>
-                </div>
-              </div>
+  
+            <div class="mail-address-container">
+              <img src="icons/mail-icon.png" alt="Mail Icon">
+              <a href="mailto:pawfectmatch@gmail.com">
+                pawfectmatch@gmail.com
+              </a>
             </div>
-          </footer>
-      
-          <div class="footer-bottom">
-            <p>&#169; All Rights Reserved to <strong>Pawfect Match 2024</strong></p>
+  
+            <div class="location-address-container">
+              <img src="icons/location-icon.png" alt="Location Icon">
+              <address>
+                Shop No. 555, Street No. 19
+                Muwaileh Commercial, Sharjah
+                United Arab Emirates
+              </address>
+            </div>
           </div>
-    </body>
- </html>
+  
+          <div>
+            <div class="logo-name">
+              <img src="images/pawfect-match-logo.png" alt="Website Logo" width="12%" height="64%">
+              <h3>Pawfect <span>Match</span></h3>
+            </div>
+  
+            <p class="slogan-subheading"><em>Start your animal adoption journey here!</em></p>
+  
+            <div class="to-top-container">
+              <a href="#header">
+                <img src="icons/arrow-icon.png" alt="Button to Top" width="12%" height="14%">
+              </a>
+              <p class="tooltip">Back To Top</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <div class="footer-bottom">
+        <p>&#169; All Rights Reserved to <strong>Pawfect Match 2024</strong></p>
+      </div>
+</body>
+</html>
