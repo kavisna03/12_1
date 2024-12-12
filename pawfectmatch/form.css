@@ -14,10 +14,11 @@
 }
 
 header,
-.footer-alignment,
 footer {
+  background-color: #FFE7CF;
   padding: 2rem 8rem;
 }
+
 
 .checkboxesandradio{
     background-color: rgba(255, 250, 225, 0.7);
@@ -31,11 +32,6 @@ footer {
     border: 3px solid beige;
     text-align: center;
 }
-
-footer {
-    background-color: #FFE7CF;
-    padding: 50px 50px 50px 50px;
-  }
   
   .footer-main {
     display: flex;
@@ -155,12 +151,19 @@ footer {
     margin-left: 1.5rem;
   }
   
-  .home-link
-  .pawtners-link,
-  .products-link,
-  .training-link {
-    color: black;
-  }
+.pawtners-link,
+.home-link,
+.products-link,
+.training-link {
+  color: black;
+}
+
+.header-top nav a:hover,
+.book-now-button {
+  font-weight: bold;
+  color: #9D2B2B;
+}
+
   
   .header-top nav a:hover,
   .book-now-button {
