@@ -13,6 +13,11 @@
     outline: none;
 }
 
+header,
+.footer-alignment,
+footer {
+  padding: 2rem 8rem;
+}
 
 .checkboxesandradio{
     background-color: rgba(255, 250, 225, 0.7);
@@ -111,7 +116,7 @@ footer {
   
   .peach-ellipse {
     background-color: #FFE7CF;
-    height: 40rem;
+    height: 39rem;
     width: 75rem;
     border-radius: 50%;
     position: absolute;
