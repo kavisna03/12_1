@@ -152,7 +152,7 @@ body {
 
 .card {
     display: flex;
-    align-items: center;
+	align-items: center;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -226,7 +226,6 @@ body {
     font-weight: bold;
     padding: 10px;
 }
-
 
 
 /* CSS code for Footer */
@@ -304,5 +303,5 @@ footer .slogan-subheading {
   height: 2.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;
 }
