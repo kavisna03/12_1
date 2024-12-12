@@ -17,7 +17,7 @@ window.onload = function() {
 };
 
 var helpArray = [
-    "Select your trainer. Trainer can be changed later.", "More than 4 hours of playsession is not allowed.",
+    "Select your trainer. (Trainer can be changed later)", "More than 4 hours of playsession is not allowed.",
     "This button submits the form. Make sure your entered details are correct", "This button clears the form", " "
 ];
 
