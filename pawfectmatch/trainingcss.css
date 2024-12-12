@@ -128,6 +128,7 @@ header .slogan-subheading {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  width: 10px;
 }
 
 .pawtners-button:hover {
